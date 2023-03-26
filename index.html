@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Title -->
+    <title>Лабораторна робота №8</title>
+
+    <!-- Icon -->
+    <link rel="icon" type="image/x-icon" href="src/logo/logo.svg">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Scripts -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+<!-- Header -->
+<header>
+    <nav class="navbar bg-dark text-light link-light">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="nav-logo navbar-brand logo-container" href="#">
+                <img src="src/logo/logo.svg" alt="Logo" width="93.6" height="93.6" class="d-inline-block me-2">
+                <span class="display-2 link-light m-0 nav-logo text-uppercase">Real</span>
+                <span class="display-2 link-orange m-0 nav-logo text-uppercase">Estate</span>
+            </a>
+            <button class="navbar-toggler text-orange navbar-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title text-orange display-5" id="offcanvasNavbarLabel">Site navigation</h5>
+                    <button type="button" class="btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" aria-current="page" href="#form">Form</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#advantages">Advantages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#cost">Cost examples</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#recommended">Recommended for you</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#packages">Our packages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#feedback">Feedback</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#location">Our offices</a>
+                        </li>
+                    </ul>
+                    <hr class="mt-3" style="height: 2px; border-width: 0; background-color: white">
+                    <div class="d-flex justify-content-around mt-3">
+                        <span class="display-5 nav-text text-uppercase text-light me-2 mb-0">Call us</span>
+                        <span class="display-5 nav-text text-orange mb-0">800. 123.4567</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+</header>
+
+<!-- Form section -->
+<div class="container-fluid" id="form">
+    <div class="row">
+        <!-- Image -->
+        <div class="d-grid col-8 ps-0 mt-2">
+            <img class="img-fluid align-self-center" src="src/stock.jpg" alt="Family picture">
+        </div>
+
+        <!-- Form -->
+        <div style="margin-right: 0" class="bg-orange d-grid p-4 col-4 mt-2">
+            <form class="text-center d-grid" action="#">
+                <span class="display-3 text-uppercase form-heading">Find your home</span>
+                <hr style="height: 2px; border-width: 0; background-color: white">
+                <div class="mb-3 text-start">
+                    <label for="nameInput" class="form-label h4 mb-0 text-light text-form">Name</label>
+                    <input style="width: 100%" type="text" class="form-control text-form no-border-radius" id="nameInput">
+                </div>
+                <div class="mb-3 text-start">
+                    <label for="emailInput" class="form-label h4 mb-0 text-light text-form">Email</label>
+                    <input type="email" class="form-control text-form no-border-radius" id="emailInput">
+                </div>
+                <div class="mb-3 text-start">
+                    <label for="numInput" class="form-label h4 mb-0 text-light text-form">Number</label>
+                    <input type="text" class="form-control text-form no-border-radius" id="numInput">
+                </div>
+                <div class="mb-3 text-start">
+                    <label for="geoInput" class="form-label h4 mb-0 text-light text-form">Location</label>
+                    <input type="text" class="form-control text-form no-border-radius" id="geoInput">
+                </div>
+
+                <input class="btn btn-secondary btn-lg sub-btn col-12" type="submit" value="GET STARTED">
+            </form>
+        </div>
+
+        <hr class="mt-3" style="height: 2px; border-width: 0; background-color: black">
+    </div>
+</div>
+
+<!-- Advantages section -->
+<div class="container-fluid" id="advantages">
+    <div class="row gx-4">
+
+        <!-- First box -->
+        <div class="col-4 custom-box">
+            <div class="bg-grey p-3">
+                <span class="display-4 text-uppercase me-2 text-dark">Sale</span>
+                <span class="display-4 text-uppercase text-orange">Exclusives</span>
+                <p class="text-dark description-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum nemo perferendis quas quisquam sapiente tenetur veritatis! Aliquid ex qui repellat.</p>
+            </div>
+        </div>
+        <!-- Second box -->
+        <div class="col-4 custom-box">
+            <div class="bg-grey p-3">
+                <span class="display-4 text-uppercase me-2 text-dark">Elite</span>
+                <span class="display-4 text-uppercase text-orange">Rentals</span>
+                <p class="text-dark description-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum nemo perferendis quas quisquam sapiente tenetur veritatis! Aliquid ex qui repellat.</p>
+            </div>
+        </div>
+        <!-- Third box -->
+        <div class="col-4 custom-box">
+            <div class="bg-grey p-3">
+                <span class="display-4 text-uppercase me-2 text-dark">Featured</span>
+                <span class="display-4 text-uppercase text-orange">Listing</span>
+                <p class="text-dark description-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum nemo perferendis quas quisquam sapiente tenetur veritatis! Aliquid ex qui repellat.</p>
+            </div>
+        </div>
+
+    </div>
+    <hr class="mt-3" style="height: 2px; border-width: 0; background-color: black">
+</div>
+
+<!-- Cost examples section -->
+<div class="container-fluid text-center" id="cost">
+
+    <h2 class="display-3">Find your perfect home and start a new life</h2>
+    <span class="text-dark description-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi aspernatur autem consectetur culpa cumque ducimus ea eveniet excepturi facere impedit itaque labore laudantium minima modi molestias natus, nesciunt nulla, odit officiis pariatur perferendis placeat quibusdam, reiciendis reprehenderit saepe sequi sit totam vel velit voluptatum.</span>
+
+    <div class="row gx-4 text-start">
+
+        <!-- First house -->
+        <div class="col-4">
+            <div class="mt-3">
+                <img class="img-fluid align-self-center" src="src/house1.jpg" alt="House1">
+                <p class="text-dark description-text mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum nemo perferendis quas quisquam sapiente tenetur veritatis! Aliquid ex qui repellat.</p>
+                <p class="text-orange h3">$4,000,000</p>
+            </div>
+        </div>
+        <!-- Second house -->
+        <div class="col-4">
+            <div class="mt-3">
+                <img class="img-fluid align-self-center" src="src/house2.jpg" alt="House2">
+                <p class="text-dark description-text mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum nemo perferendis quas quisquam sapiente tenetur veritatis! Aliquid ex qui repellat.</p>
+                <p class="text-orange h3">$5,000,000</p>
+            </div>
+        </div>
+        <!-- Third house -->
+        <div class="col-4">
+            <div class="mt-3">
+                <img class="img-fluid align-self-center" src="src/house3.jpg" alt="House3">
+                <p class="text-dark description-text mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum nemo perferendis quas quisquam sapiente tenetur veritatis! Aliquid ex qui repellat.</p>
+                <p class="text-orange h3">$7,000,000</p>
+            </div>
+        </div>
+
+    </div>
+    <hr class="mt-3" style="height: 2px; border-width: 0; background-color: black">
+</div>
+
+<!-- Pills section -->
+<div class="container-fluid text-center" id="pills">
+    <h2 class="display-3">Finances</h2>
+    <span class="text-dark description-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi aspernatur autem consectetur culpa cumque ducimus ea eveniet excepturi facere impedit itaque labore laudantium minima modi molestias natus, nesciunt nulla, odit officiis pariatur perferendis placeat quibusdam, reiciendis reprehenderit saepe sequi sit totam vel velit voluptatum.</span>
+
+    <div class="row gx-3 text-center">
+        <ul class="nav nav-pills justify-content-evenly mt-3 mb-3">
+            <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="pill" aria-current="page" href="#">Low</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#">Medium</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#">High</a>
+            </li>
+        </ul>
+    </div>
+    <hr class="mt-3" style="height: 2px; border-width: 0; background-color: black">
+</div>
+
+<!-- Available section -->
+<div class="container-fluid text-center" id="recommended">
+    <h2 class="display-3">Recommended for you</h2>
+    <span class="text-dark description-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi aspernatur autem consectetur culpa cumque ducimus ea eveniet excepturi facere impedit itaque labore laudantium minima modi molestias natus, nesciunt nulla, odit officiis pariatur perferendis placeat quibusdam, reiciendis reprehenderit saepe sequi sit totam vel velit voluptatum.</span>
+
+    <table class="table table-striped table-hover table-bordered table-sm mt-3 mb-3">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Location</th>
+            <th scope="col">Volume</th>
+            <th scope="col">Adjoining territories</th>
+            <th scope="col">Decorated</th>
+            <th scope="col">Price</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="table-info">
+            <th scope="row">1</th>
+            <td>Clemi</td>
+            <td>20sq m</td>
+            <td class="table-success">yes</td>
+            <td>no</td>
+            <td>$4,000,000</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>10sq m</td>
+            <td class="table-success">yes</td>
+            <td>no</td>
+            <td>$2,000,000</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>Bridlangwel</td>
+            <td>15sq m</td>
+            <td>no</td>
+            <td>no</td>
+            <td>$3,000,000</td>
+        </tr>
+        <tr class="table-info">
+            <th scope="row">4</th>
+            <td>Thamde With Redklin</td>
+            <td>27sq m</td>
+            <td class="table-success">yes</td>
+            <td class="table-success">yes</td>
+            <td>$3,250,000</td>
+        </tr>
+        <tr class="table-info">
+            <th scope="row">5</th>
+            <td>Wasteland</td>
+            <td>22sq m</td>
+            <td>no</td>
+            <td class="table-success">yes</td>
+            <td>$3,000,000</td>
+        </tr>
+        <tr class="table-danger">
+            <th scope="row">6</th>
+            <td>Santa Letmoo</td>
+            <td>31sq m</td>
+            <td>no</td>
+            <td class="table-success">yes</td>
+            <td>$5,000,000</td>
+        </tr>
+        <tr>
+            <th scope="row">7</th>
+            <td>Nycep Du Soncoeur</td>
+            <td>17sq m</td>
+            <td>no</td>
+            <td>no</td>
+            <td>$2,400,000</td>
+        </tr>
+        <tr>
+            <th scope="row">8</th>
+            <td>East Moundspic</td>
+            <td>15sq m</td>
+            <td class="table-success">yes</td>
+            <td>no</td>
+            <td>$2,000,000</td>
+        </tr>
+        <tr class="table-danger">
+            <th scope="row">9</th>
+            <td>Moose Liscluncine</td>
+            <td>40sq m</td>
+            <td class="table-success">yes</td>
+            <td class="table-success">yes</td>
+            <td>$6,200,000</td>
+        </tr>
+        <tr class="table-danger">
+            <th scope="row">10</th>
+            <td>Wil</td>
+            <td>42sq m</td>
+            <td class="table-success">yes</td>
+            <td class="table-success">yes</td>
+            <td>$6,460,000</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <hr class="mt-3" style="height: 2px; border-width: 0; background-color: black">
+
+</div>
+
+<!-- Packages section -->
+<div class="container-fluid text-center" id="packages">
+    <h2 class="display-3">Our packages</h2>
+    <span class="text-dark description-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi aspernatur autem consectetur culpa cumque ducimus ea eveniet excepturi facere impedit itaque labore laudantium minima modi molestias natus, nesciunt nulla, odit officiis pariatur perferendis placeat quibusdam, reiciendis reprehenderit saepe sequi sit totam vel velit voluptatum.</span>
+
+    <div class="row gx-3 text-center">
+        <div id="accordion">
+            <div class="card mt-2 mb-2">
+                <div class="card-header">
+                    <a class="collapsed card-link h3 text-decoration-none text-orange" data-bs-toggle="collapse" href="#collapseOne">
+                        Standart package
+                    </a>
+                </div>
+                <div id="collapseOne" class="collapse show" data-bs-parent= "#accordion">
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium autem blanditiis corporis eaque error, eveniet facere laboriosam nesciunt quae quia quod saepe soluta suscipit vero voluptates? Aliquid commodi dolore enim explicabo incidunt laudantium voluptate voluptatum? Dolore eos facilis molestiae necessitatibus.
+                    </div>
+                </div>
+            </div>
+            <div class="card mt-2 mb-2">
+                <div class="card-header">
+                    <a class="collapsed card-link h3 text-decoration-none text-orange" data-bs-toggle="collapse" href="#collapseTwo">
+                        V.I.P Client
+                    </a>
+                </div>
+                <div id="collapseTwo" class="collapse" data-bs-target="#accordion">
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet beatae commodi, culpa cum dolorum earum eveniet fugit id molestiae molestias natus odit optio perspiciatis suscipit, tenetur voluptate. Architecto at delectus eos illo in laudantium nostrum perspiciatis quam quia rem!
+                    </div>
+                </div>
+            </div>
+            <div class="card mt-2 mb-2">
+                <div class="card-header">
+                    <a class="collapsed card-link h3 text-decoration-none text-orange" data-bs-toggle="collapse" href="#collapseThree">
+                        Premium package
+                    </a>
+                </div>
+                <div id="collapseThree" class="collapse" data-bs-parent= "#accordion">
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid aperiam architecto assumenda, blanditiis cum delectus ea eius error eum facere inventore labore maiores odio officia optio pariatur perferendis qui, quia repellendus soluta ut vitae voluptas. Alias assumenda itaque labore!
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <hr class="mt-3" style="height: 2px; border-width: 0; background-color: black">
+</div>
+
+<!-- Clients feedback section -->
+<div class="container-fluid text-center" id="feedback">
+    <h2 class="display-3">What our clients say</h2>
+    <span class="text-dark description-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi aspernatur autem consectetur culpa cumque ducimus ea eveniet excepturi facere impedit itaque labore laudantium minima modi molestias natus, nesciunt nulla, odit officiis pariatur perferendis placeat quibusdam, reiciendis reprehenderit saepe sequi sit totam vel velit voluptatum.</span>
+
+    <div class="row gx-3 text-start">
+        <!-- First client -->
+        <div class="col-6">
+            <div class="row gx-3 text-start align-items-center">
+                <div class="col-5">
+                    <div class="mt-3">
+                        <img class="img-thumbnail rounded align-self-center" src="src/people1.jpg" alt="People1">
+                    </div>
+                </div>
+                <div class="col-7">
+                    <div class="mt-3">
+                        <p class="text-dark description-text mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad amet fuga iusto laboriosam nemo pariatur quaerat quam quia totam! Debitis delectus distinctio incidunt nisi quibusdam? Delectus iusto perspiciatis voluptates!</p>
+                        <p class="text-orange mb-0">- John Smith</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Second client -->
+        <div class="col-6">
+            <div class="row gx-3 text-start align-items-center">
+                <div class="col-5">
+                    <div class="mt-3">
+                        <img class="img-thumbnail rounded align-self-center" src="src/people2.jpg" alt="People2">
+                    </div>
+                </div>
+                <div class="col-7">
+                    <div class="mt-3">
+                        <p class="text-dark description-text mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad amet fuga iusto laboriosam nemo pariatur quaerat quam quia totam! Debitis delectus distinctio incidunt nisi quibusdam? Delectus iusto perspiciatis voluptates!</p>
+                        <p class="text-orange mb-0">- George Moberson</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+        <div class="container-fluid text-center mt-3 mb-3">
+            <span class="text-dark description-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi aspernatur autem consectetur culpa cumque ducimus ea eveniet excepturi facere impedit itaque labore laudantium minima modi molestias natus, nesciunt nulla, odit officiis pariatur perferendis placeat quibusdam, reiciendis reprehenderit saepe sequi sit totam vel velit voluptatum.</span>
+            <div id="coverimageforplayer" class="container-fluid d-flex justify-content-center mt-2"><img class="introvideo" src="src/playerPreview.png" width="1280" height="720" /></div>
+        </div>
+
+        <div class="container-fluid mt-3 mb-3 row gx-4">
+            <span class="text-dark description-text mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi aspernatur autem consectetur culpa cumque ducimus ea eveniet excepturi facere impedit itaque labore laudantium minima modi molestias natus, nesciunt nulla, odit officiis pariatur perferendis placeat quibusdam, reiciendis reprehenderit saepe sequi sit totam vel velit voluptatum.</span>
+
+            <div class="col-4 d-flex justify-content-center">
+                <audio class="m-2" controls src="src/picked.mp3">
+                    Ваш браузер не підтримує аудіо елементи
+                </audio>
+            </div>
+            <div class="col-4 d-flex justify-content-center">
+                <audio class="m-2" controls src="src/picked.mp3">
+                    Ваш браузер не підтримує аудіо елементи
+                </audio>
+            </div>
+            <div class="col-4 d-flex justify-content-center">
+                <audio class="m-2" controls src="src/picked.mp3">
+                    Ваш браузер не підтримує аудіо елементи
+                </audio>
+            </div>
+            <div class="col-4 d-flex justify-content-center">
+                <audio class="m-2" controls src="src/picked.mp3">
+                    Ваш браузер не підтримує аудіо елементи
+                </audio>
+            </div>
+            <div class="col-4 d-flex justify-content-center">
+                <audio class="m-2" controls src="src/picked.mp3">
+                    Ваш браузер не підтримує аудіо елементи
+                </audio>
+            </div>
+            <div class="col-4 d-flex justify-content-center">
+                <audio class="m-2" controls src="src/picked.mp3">
+                    Ваш браузер не підтримує аудіо елементи
+                </audio>
+            </div>
+        </div>
+        
+    <hr class="mt-3" style="height: 2px; border-width: 0; background-color: black">
+</div>
+</div>
+
+<!-- Offices location section -->
+<div class="container-fluid text-center" id="location">
+    <h2 class="display-3">Our offices</h2>
+    <span class="text-dark description-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi aspernatur autem consectetur culpa cumque ducimus ea eveniet excepturi facere impedit itaque labore laudantium minima modi molestias natus, nesciunt nulla, odit officiis pariatur perferendis placeat quibusdam, reiciendis reprehenderit saepe sequi sit totam vel velit voluptatum.</span>
+
+    <div class="row gx-3 text-start">
+        <!-- Map -->
+        <div class="container-fluid mt-3 mb-3 d-grid justify-content-center text-center" id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.9186345045464!2d24.000678051064025!3d49.82519443999876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae781441b3fab%3A0x7d0b898583ebe1ee!2sNational%20Forestry%20University%20of%20Ukraine!5e0!3m2!1sru!2sua!4v1679076618939!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+    <div class="container-fluid text-center footer-text bg-dark mt-4 mb-0 p-3">
+        <div id="copyright" class="m-2">
+            <span id="cop_text" class="h4 text-light me-0">©️ Copyright 2014-2023. All Rights Reserved | Designed by</span>
+            <span id="owner_text" class="h4 text-orange ms-0">buylandingpagedesign.com</span>
+        </div>
+        <p class="h5 text-light footer-text mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, neque?</p>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

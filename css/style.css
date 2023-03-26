@@ -1,0 +1,91 @@
+@font-face {
+    font-family: BebasNeue;
+    src: url(../fonts/BebasNeue-Regular.ttf);
+}
+
+:root {
+    --main-bg-color: #FF8C00FF;
+    --secondary-bg-color: #adadad;
+    --main-text-color: #F1F1F1FF;
+    --secondary-text-color: #FF8C00FF;
+}
+
+body {
+    font-family: BebasNeue, "Arial", "Times New Roman";
+}
+
+.link-orange, .text-orange {
+    color: var(--secondary-text-color);
+}
+
+.link-orange:hover {
+    color: var(--secondary-text-color);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo, .nav-text {
+    font-family: BebasNeue, "Arial", "Times New Roman";
+    text-decoration: none;
+}
+
+.orange-pills {
+    background-color: orange;
+    color: orange;
+}
+
+.nav-link.active {
+    color: white !important;
+    background-color: var(--secondary-text-color) !important;
+}
+
+.nav-link {
+    color: var(--secondary-text-color) !important;
+}
+
+.bg-orange {
+    background: var(--main-bg-color) !important;
+}
+
+.form-heading {
+    color: var(--main-text-color);
+}
+
+.no-border-radius {
+    border-radius: 0;
+}
+
+.text-form, .description-text {
+    font-family: "Nirmala UI";
+}
+
+.footer-text {
+    font-family: "Nirmala UI";
+    font-weight: 100;
+}
+
+.sub-btn {
+    border-radius: 0;
+    background-color: #222;
+    border: none;
+    font-size: calc(0.5rem + 3.3vw) !important;
+}
+
+.bg-grey {
+    background-color: var(--secondary-bg-color);
+}
+
+.custom-box::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 15px;
+    background-color: #000000FF;
+}
+
+#copyright {
+    transition: all 0.2s ease-in-out;
+}
